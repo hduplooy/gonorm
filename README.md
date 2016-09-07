@@ -52,14 +52,16 @@ Now you would like to generate a json representation of the data in that table. 
 
 ### func NewNorm(driver, connect string) (*Norm, error)
 NewNorm just connects to a database with the necessary details and return a *Norm structure and an error if any.  
-The driver and connect strings are kept in the returned structure.  
+The driver and connect strings are kept in the returned structure.
+
 **driver** is the database type that one connects to (for example "postgres")  
 **connect** is the connection string for the type of database with your database name, user, password etc.
 
 ### func (ent *Norm) GetRows(sql string, val interface{}) (interface{}, error)
-GetRows will execute the sql query and then based on the type of val generate a slice with entries populated from each row returned.  
-*sql* is the sql query (select query normally)  
-*val* is the val (an empty structure) which is used as template to generate the slice
+GetRows will execute the sql query and then based on the type of val generate a slice with entries populated from each row returned.
+
+**sql** is the sql query (select query normally)  
+**val** is the val (an empty structure) which is used as template to generate the slice
 
 ### func (ent *Norm) GetRow(sql string, val interface{}) (interface{}, error)
 GetRow similar to GetRows except it is for only the first row returned.  
