@@ -4,6 +4,8 @@
 
 This is currently really just an straight forward way to take a query and populate a structure, or a slice based on a structure or generate a json representation.
 
+More functionality will be added over time for inserting, updating and deleting, etc.
+
 ### An example
 
 Let's say you have a postgres database (can be anything as long as you have the driver for it) called *myerp* with a table defined as:
