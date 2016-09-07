@@ -48,6 +48,13 @@ Now you would like to generate a json representation of the data in that table. 
         fmt.Println(result)
     }
 
+This will then print out the json as something like:
+
+    [{"id":1,"Name":"Peter","Surname":"Pan","Phone":"+9(999)1234567"},
+     {"id":2,"Name":"Cap","Surname":"Hook","Phone":"+6(666)9999999"},
+     {"id":3,"Name":"Lily","Surname":"Tiger","Phone":"+9(999)1212121"}]
+
+
 ## API
 
 ### func NewNorm(driver, connect string) (*Norm, error)
