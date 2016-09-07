@@ -64,16 +64,19 @@ GetRows will execute the sql query and then based on the type of val generate a 
 **val** is the val (an empty structure) which is used as template to generate the slice
 
 ### func (ent *Norm) GetRow(sql string, val interface{}) (interface{}, error)
-GetRow similar to GetRows except it is for only the first row returned.  
-*sql* is the sql query (select query normally)  
-*val* is the val (an empty structure) which is used as template to generate the slice
+GetRow similar to GetRows except it is for only the first row returned.
+
+**sql** is the sql query (select query normally)  
+**val** is the val (an empty structure) which is used as template to generate the slice
 
 ### func (ent *Norm) GetRowsJson(sql string, val interface{}) (string, error)
-GetRowsJson get the rows from the sql query map them to the struct type of val and convert the slice to json.  
-*sql* is the sql query (select query normally)  
-*val* is the val (an empty structure) which is used as template to generate the slice
+GetRowsJson get the rows from the sql query map them to the struct type of val and convert the slice to json.
+
+**sql** is the sql query (select query normally)  
+**val** is the val (an empty structure) which is used as template to generate the slice
 
 ### func (ent *Norm) GetRowJson(sql string, val interface{}) (string, error)
-GetRowJson get the first row from the sql query map it to the struct type of val and convert to json.  
-*sql* is the sql query (select query normally)  
-*val* is the val (an empty structure) which is used as template
+GetRowJson get the first row from the sql query map it to the struct type of val and convert to json.
+
+**sql** is the sql query (select query normally)  
+**val** is the val (an empty structure) which is used as template
